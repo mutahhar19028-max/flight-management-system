@@ -1,0 +1,16 @@
+[2025-11-21T06:17:06.466Z] Main window created and index.html loaded
+[2025-11-21T06:17:06.571Z] Backend process started
+[2025-11-21T06:17:07.660Z] index.html: Page loaded, loading HTML modules
+[2025-11-21T06:17:07.687Z] index.html: header.html loaded successfully
+[2025-11-21T06:17:07.691Z] index.html: deals.html loaded successfully
+[2025-11-21T06:17:07.736Z] index.html: footer.html loaded successfully
+[2025-11-21T06:17:07.738Z] index.html: booking.html loaded successfully
+[2025-11-21T06:17:07.877Z] renderer.js: Script initialized
+[2025-11-21T06:17:07.986Z] renderer.js: booking.html DOM ready, attaching event listeners
+[2025-11-21T06:17:07.991Z] renderer.js: All event listeners attached successfully (Book, Show, Search, Update, Cancel)
+[2025-11-21T06:17:24.580Z] renderer.js: Book Flight button clicked
+[2025-11-21T06:17:24.580Z] renderer.js: Form data - From: Lebanon, To: null, Trip: Return, Date: 1111-11-11, Passengers: 1, eco
+[2025-11-21T06:17:24.581Z] renderer.js: Booking validation failed - missing fields
+[2025-11-21T06:17:28.315Z] Sent exit command to backend process
+[2025-11-21T06:17:28.315Z] App exited
+[2025-11-21T06:17:28.324Z] Invalid JSON from backend: {"message":"Unknown action: ","status":"error"}

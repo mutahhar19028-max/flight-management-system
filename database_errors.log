@@ -1,0 +1,3 @@
+[ERROR] getReservedSeats: no such table: airline_data
+[ERROR] updateReservedSeats check: no such table: airline_data
+[ERROR] saveTicket: no such table: tickets
