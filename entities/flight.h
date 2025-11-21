@@ -16,8 +16,8 @@ private:
     int year;
     string departureTime; // format: HH:MM
     string destination; // airport name
-    map<string, int> ticketPricing; // e.g., {"Economy": 400, "Business": 1000}
-    map<string, int> seatsReserved; // e.g., {"Economy": 45, "Business": 10}
+    std::map<string, int> ticketPricing; // e.g., {"Economy": 400, "Business": 1000}
+    std::map<string, int> seatsReserved; // e.g., {"Economy": 45, "Business": 10}
 
 public:
     // Constructors
@@ -32,9 +32,9 @@ public:
     int getYear() const;
     string getDepartureTime() const;
     string getDestination() const;
-    map<string, int> getTicketPricing() const;
+    std::map<string, int> getTicketPricing() const;
     int getPriceForClass(string className) const;
-    map<string, int> getSeatsReserved() const;
+    std::map<string, int> getSeatsReserved() const;
     int getSeatsReservedForClass(string className) const;
 
     // Setters
@@ -45,9 +45,9 @@ public:
     void setYear(int y);
     void setDepartureTime(string time);
     void setDestination(string dest);
-    void setTicketPricing(map<string, int> pricing);
+    void setTicketPricing(std::map<string, int> pricing);
     void addTicketPrice(string className, int price);
-    void setSeatsReserved(map<string, int> reserved);
+    void setSeatsReserved(std::map<string, int> reserved);
 
     // Seat management
     bool reserveSeat(string className);

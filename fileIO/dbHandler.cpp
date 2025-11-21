@@ -591,4 +591,15 @@ bool DBHandler::loadDatabase(const std::string& filename, SystemData& data) {
     }
     
     bool success = true;
-    success = success && loadCustomers(
+    success = success && loadCustomers(db, data.customers);
+    success = success && loadFlights(db, data.flights);
+    success = success && loadAirports(db, data.airports);
+    success = success && loadPlanes(db, data.planes);
+    success = success && loadTickets(db, data.tickets);
+    success = success && loadOffers(db, data.offers);
+    success = success && loadWaitingLists(db, data.waitingLists);
+    success = success && loadMetadata(db, data.lastCustomerId, data.lastTicketId, data.lastFlightId);
+    
+    sqlite3_close(db);
+    return success;
+}

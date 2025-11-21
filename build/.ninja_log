@@ -1,0 +1,19 @@
+# ninja log v7
+63	482	7854464366562933	CMakeFiles/flightSystem.dir/utilities/idGenerator.cpp.obj	10e82774e5a782f2
+21	814	7854464366133640	CMakeFiles/flightSystem.dir/entities/airport.cpp.obj	9c5e2790b434f345
+14	823	7854464366062227	CMakeFiles/flightSystem.dir/entities/customer.cpp.obj	40b38ba56d52ecf
+40	840	7854464366403371	CMakeFiles/flightSystem.dir/entities/offer.cpp.obj	ac8ba0b8317a93cb
+34	1232	7854464366283675	CMakeFiles/flightSystem.dir/entities/ticket.cpp.obj	a0e0e821a711f1f6
+9	1289	7854464366013080	CMakeFiles/flightSystem.dir/main.cpp.obj	f341dc23474ebe7
+27	1532	7854464366213869	CMakeFiles/flightSystem.dir/entities/plane.cpp.obj	7b744b9edc811fa8
+17	1805	7854464366092300	CMakeFiles/flightSystem.dir/entities/flight.cpp.obj	10e89a22c2870022
+515	1877	7854464371300269	CMakeFiles/flightSystem.dir/utilities/dateTime.cpp.obj	49c943844ec9c24c
+818	2043	7854464374102786	CMakeFiles/flightSystem.dir/utilities/validator.cpp.obj	1ae4524438eba239
+841	2211	7854464374352122	CMakeFiles/flightSystem.dir/fileIO/textWriter.cpp.obj	ea4c636ecc4f0df
+1318	2691	7854464379199171	CMakeFiles/flightSystem.dir/ui/menu.cpp.obj	8a2de7f9688dbfb1
+827	3255	7854464374202519	CMakeFiles/flightSystem.dir/fileIO/textReader.cpp.obj	8057c34dc2ab9345
+1261	3608	7854464378760343	CMakeFiles/flightSystem.dir/fileIO/dbHandler.cpp.obj	6c87a855fd49e5c2
+53	4069	7854464366503093	CMakeFiles/flightSystem.dir/entities/manager.cpp.obj	9989ece85f666c13
+4	32466	7854464365962293	CMakeFiles/sqlite3_static.dir/sqlite/sqlite3.c.obj	88d5bacbd7ab3b10
+32469	32547	7854464690618150	libsqlite3_static.a	74b2090ddfbca588
+32547	33098	7854464691398702	flightSystem.exe	c954a7784d3530b7

@@ -32,7 +32,7 @@ bool Offer::isApplicableToFlight(int flightNum) const {
 void Offer::display() const {
     cout << "\n===== Offer Details =====" << endl;
     cout << "Offer ID: " << offerId << endl;
-    cout << "Flight Number: " << (flightNumber == -1 ? "All Flights" : to_string(flightNumber)) << endl;
+    cout << "Flight Number: " << (flightNumber == -1 ? "All Flights" : std::to_string(flightNumber)) << endl;
     cout << "Offer Type: " << offerType << endl;
     cout << "Discount: " << discountAmount << "%" << endl;
     cout << "=========================" << endl;

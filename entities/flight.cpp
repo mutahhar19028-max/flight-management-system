@@ -22,8 +22,8 @@ int Flight::getMonth() const { return month; }
 int Flight::getYear() const { return year; }
 string Flight::getDepartureTime() const { return departureTime; }
 string Flight::getDestination() const { return destination; }
-map<string, int> Flight::getTicketPricing() const { return ticketPricing; }
-map<string, int> Flight::getSeatsReserved() const { return seatsReserved; }
+std::map<string, int> Flight::getTicketPricing() const { return ticketPricing; }
+std::map<string, int> Flight::getSeatsReserved() const { return seatsReserved; }
 
 int Flight::getPriceForClass(string className) const {
     auto it = ticketPricing.find(className);
@@ -43,8 +43,8 @@ void Flight::setMonth(int m) { month = m; }
 void Flight::setYear(int y) { year = y; }
 void Flight::setDepartureTime(string time) { departureTime = time; }
 void Flight::setDestination(string dest) { destination = dest; }
-void Flight::setTicketPricing(map<string, int> pricing) { ticketPricing = pricing; }
-void Flight::setSeatsReserved(map<string, int> reserved) { seatsReserved = reserved; }
+void Flight::setTicketPricing(std::map<string, int> pricing) { ticketPricing = pricing; }
+void Flight::setSeatsReserved(std::map<string, int> reserved) { seatsReserved = reserved; }
 
 void Flight::addTicketPrice(string className, int price) {
     ticketPricing[className] = price;
@@ -71,7 +71,7 @@ int Flight::getAvailableSeats(string className, int totalSeatsInClass) const {
 
 // Display
 string Flight::getDateString() const {
-    return to_string(day) + "/" + to_string(month) + "/" + to_string(year);
+    return std::to_string(day) + "/" + std::to_string(month) + "/" + std::to_string(year);
 }
 
 void Flight::display() const {
