@@ -1,5 +1,6 @@
 C:/Users/DELL/Documents/flight-management-system/build/CMakeFiles/sqlite3_static.dir
 C:/Users/DELL/Documents/flight-management-system/build/CMakeFiles/flightSystem.dir
+C:/Users/DELL/Documents/flight-management-system/build/CMakeFiles/flightSystemJSON.dir
 C:/Users/DELL/Documents/flight-management-system/build/CMakeFiles/edit_cache.dir
 C:/Users/DELL/Documents/flight-management-system/build/CMakeFiles/rebuild_cache.dir
 C:/Users/DELL/Documents/flight-management-system/build/CMakeFiles/list_install_components.dir

@@ -1,2 +1,0 @@
-[INFO] Flight Backend Started
-[INFO] Flight Backend Terminated

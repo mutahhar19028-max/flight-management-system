@@ -53,7 +53,7 @@ build CMakeFiles/sqlite3_static.dir/sqlite/sqlite3.c.obj: C_COMPILER__sqlite3_st
   CONFIG = Release
   DEP_FILE = CMakeFiles\sqlite3_static.dir\sqlite\sqlite3.c.obj.d
   FLAGS = -O3 -DNDEBUG -std=c11 -w
-  INCLUDES = -IC:/Users/DELL/Documents/flight-management-system -IC:/Users/DELL/Documents/flight-management-system/sqlite
+  INCLUDES = -IC:/Users/DELL/Documents/flight-management-system -IC:/Users/DELL/Documents/flight-management-system/json -IC:/Users/DELL/Documents/flight-management-system/sqlite
   OBJECT_DIR = CMakeFiles\sqlite3_static.dir
   OBJECT_FILE_DIR = CMakeFiles\sqlite3_static.dir\sqlite
   TARGET_COMPILE_PDB = CMakeFiles\sqlite3_static.dir\sqlite3_static.pdb
@@ -91,9 +91,20 @@ build CMakeFiles/flightSystem.dir/main.cpp.obj: CXX_COMPILER__flightSystem_unsca
   DEFINES = -DDATA_DIR=\"C:/Users/DELL/Documents/flight-management-system/data\"
   DEP_FILE = CMakeFiles\flightSystem.dir\main.cpp.obj.d
   FLAGS = -O3 -DNDEBUG -std=c++17 -w
-  INCLUDES = -IC:/Users/DELL/Documents/flight-management-system -IC:/Users/DELL/Documents/flight-management-system/sqlite
+  INCLUDES = -IC:/Users/DELL/Documents/flight-management-system -IC:/Users/DELL/Documents/flight-management-system/json -IC:/Users/DELL/Documents/flight-management-system/sqlite
   OBJECT_DIR = CMakeFiles\flightSystem.dir
   OBJECT_FILE_DIR = CMakeFiles\flightSystem.dir
+  TARGET_COMPILE_PDB = CMakeFiles\flightSystem.dir\
+  TARGET_PDB = flightSystem.pdb
+
+build CMakeFiles/flightSystem.dir/ui/menu.cpp.obj: CXX_COMPILER__flightSystem_unscanned_Release C$:/Users/DELL/Documents/flight-management-system/ui/menu.cpp || cmake_object_order_depends_target_flightSystem
+  CONFIG = Release
+  DEFINES = -DDATA_DIR=\"C:/Users/DELL/Documents/flight-management-system/data\"
+  DEP_FILE = CMakeFiles\flightSystem.dir\ui\menu.cpp.obj.d
+  FLAGS = -O3 -DNDEBUG -std=c++17 -w
+  INCLUDES = -IC:/Users/DELL/Documents/flight-management-system -IC:/Users/DELL/Documents/flight-management-system/json -IC:/Users/DELL/Documents/flight-management-system/sqlite
+  OBJECT_DIR = CMakeFiles\flightSystem.dir
+  OBJECT_FILE_DIR = CMakeFiles\flightSystem.dir\ui
   TARGET_COMPILE_PDB = CMakeFiles\flightSystem.dir\
   TARGET_PDB = flightSystem.pdb
 
@@ -102,7 +113,7 @@ build CMakeFiles/flightSystem.dir/entities/customer.cpp.obj: CXX_COMPILER__fligh
   DEFINES = -DDATA_DIR=\"C:/Users/DELL/Documents/flight-management-system/data\"
   DEP_FILE = CMakeFiles\flightSystem.dir\entities\customer.cpp.obj.d
   FLAGS = -O3 -DNDEBUG -std=c++17 -w
-  INCLUDES = -IC:/Users/DELL/Documents/flight-management-system -IC:/Users/DELL/Documents/flight-management-system/sqlite
+  INCLUDES = -IC:/Users/DELL/Documents/flight-management-system -IC:/Users/DELL/Documents/flight-management-system/json -IC:/Users/DELL/Documents/flight-management-system/sqlite
   OBJECT_DIR = CMakeFiles\flightSystem.dir
   OBJECT_FILE_DIR = CMakeFiles\flightSystem.dir\entities
   TARGET_COMPILE_PDB = CMakeFiles\flightSystem.dir\
@@ -113,7 +124,7 @@ build CMakeFiles/flightSystem.dir/entities/flight.cpp.obj: CXX_COMPILER__flightS
   DEFINES = -DDATA_DIR=\"C:/Users/DELL/Documents/flight-management-system/data\"
   DEP_FILE = CMakeFiles\flightSystem.dir\entities\flight.cpp.obj.d
   FLAGS = -O3 -DNDEBUG -std=c++17 -w
-  INCLUDES = -IC:/Users/DELL/Documents/flight-management-system -IC:/Users/DELL/Documents/flight-management-system/sqlite
+  INCLUDES = -IC:/Users/DELL/Documents/flight-management-system -IC:/Users/DELL/Documents/flight-management-system/json -IC:/Users/DELL/Documents/flight-management-system/sqlite
   OBJECT_DIR = CMakeFiles\flightSystem.dir
   OBJECT_FILE_DIR = CMakeFiles\flightSystem.dir\entities
   TARGET_COMPILE_PDB = CMakeFiles\flightSystem.dir\
@@ -124,7 +135,7 @@ build CMakeFiles/flightSystem.dir/entities/airport.cpp.obj: CXX_COMPILER__flight
   DEFINES = -DDATA_DIR=\"C:/Users/DELL/Documents/flight-management-system/data\"
   DEP_FILE = CMakeFiles\flightSystem.dir\entities\airport.cpp.obj.d
   FLAGS = -O3 -DNDEBUG -std=c++17 -w
-  INCLUDES = -IC:/Users/DELL/Documents/flight-management-system -IC:/Users/DELL/Documents/flight-management-system/sqlite
+  INCLUDES = -IC:/Users/DELL/Documents/flight-management-system -IC:/Users/DELL/Documents/flight-management-system/json -IC:/Users/DELL/Documents/flight-management-system/sqlite
   OBJECT_DIR = CMakeFiles\flightSystem.dir
   OBJECT_FILE_DIR = CMakeFiles\flightSystem.dir\entities
   TARGET_COMPILE_PDB = CMakeFiles\flightSystem.dir\
@@ -135,7 +146,7 @@ build CMakeFiles/flightSystem.dir/entities/plane.cpp.obj: CXX_COMPILER__flightSy
   DEFINES = -DDATA_DIR=\"C:/Users/DELL/Documents/flight-management-system/data\"
   DEP_FILE = CMakeFiles\flightSystem.dir\entities\plane.cpp.obj.d
   FLAGS = -O3 -DNDEBUG -std=c++17 -w
-  INCLUDES = -IC:/Users/DELL/Documents/flight-management-system -IC:/Users/DELL/Documents/flight-management-system/sqlite
+  INCLUDES = -IC:/Users/DELL/Documents/flight-management-system -IC:/Users/DELL/Documents/flight-management-system/json -IC:/Users/DELL/Documents/flight-management-system/sqlite
   OBJECT_DIR = CMakeFiles\flightSystem.dir
   OBJECT_FILE_DIR = CMakeFiles\flightSystem.dir\entities
   TARGET_COMPILE_PDB = CMakeFiles\flightSystem.dir\
@@ -146,7 +157,7 @@ build CMakeFiles/flightSystem.dir/entities/ticket.cpp.obj: CXX_COMPILER__flightS
   DEFINES = -DDATA_DIR=\"C:/Users/DELL/Documents/flight-management-system/data\"
   DEP_FILE = CMakeFiles\flightSystem.dir\entities\ticket.cpp.obj.d
   FLAGS = -O3 -DNDEBUG -std=c++17 -w
-  INCLUDES = -IC:/Users/DELL/Documents/flight-management-system -IC:/Users/DELL/Documents/flight-management-system/sqlite
+  INCLUDES = -IC:/Users/DELL/Documents/flight-management-system -IC:/Users/DELL/Documents/flight-management-system/json -IC:/Users/DELL/Documents/flight-management-system/sqlite
   OBJECT_DIR = CMakeFiles\flightSystem.dir
   OBJECT_FILE_DIR = CMakeFiles\flightSystem.dir\entities
   TARGET_COMPILE_PDB = CMakeFiles\flightSystem.dir\
@@ -157,7 +168,7 @@ build CMakeFiles/flightSystem.dir/entities/offer.cpp.obj: CXX_COMPILER__flightSy
   DEFINES = -DDATA_DIR=\"C:/Users/DELL/Documents/flight-management-system/data\"
   DEP_FILE = CMakeFiles\flightSystem.dir\entities\offer.cpp.obj.d
   FLAGS = -O3 -DNDEBUG -std=c++17 -w
-  INCLUDES = -IC:/Users/DELL/Documents/flight-management-system -IC:/Users/DELL/Documents/flight-management-system/sqlite
+  INCLUDES = -IC:/Users/DELL/Documents/flight-management-system -IC:/Users/DELL/Documents/flight-management-system/json -IC:/Users/DELL/Documents/flight-management-system/sqlite
   OBJECT_DIR = CMakeFiles\flightSystem.dir
   OBJECT_FILE_DIR = CMakeFiles\flightSystem.dir\entities
   TARGET_COMPILE_PDB = CMakeFiles\flightSystem.dir\
@@ -168,7 +179,7 @@ build CMakeFiles/flightSystem.dir/entities/manager.cpp.obj: CXX_COMPILER__flight
   DEFINES = -DDATA_DIR=\"C:/Users/DELL/Documents/flight-management-system/data\"
   DEP_FILE = CMakeFiles\flightSystem.dir\entities\manager.cpp.obj.d
   FLAGS = -O3 -DNDEBUG -std=c++17 -w
-  INCLUDES = -IC:/Users/DELL/Documents/flight-management-system -IC:/Users/DELL/Documents/flight-management-system/sqlite
+  INCLUDES = -IC:/Users/DELL/Documents/flight-management-system -IC:/Users/DELL/Documents/flight-management-system/json -IC:/Users/DELL/Documents/flight-management-system/sqlite
   OBJECT_DIR = CMakeFiles\flightSystem.dir
   OBJECT_FILE_DIR = CMakeFiles\flightSystem.dir\entities
   TARGET_COMPILE_PDB = CMakeFiles\flightSystem.dir\
@@ -179,7 +190,7 @@ build CMakeFiles/flightSystem.dir/utilities/idGenerator.cpp.obj: CXX_COMPILER__f
   DEFINES = -DDATA_DIR=\"C:/Users/DELL/Documents/flight-management-system/data\"
   DEP_FILE = CMakeFiles\flightSystem.dir\utilities\idGenerator.cpp.obj.d
   FLAGS = -O3 -DNDEBUG -std=c++17 -w
-  INCLUDES = -IC:/Users/DELL/Documents/flight-management-system -IC:/Users/DELL/Documents/flight-management-system/sqlite
+  INCLUDES = -IC:/Users/DELL/Documents/flight-management-system -IC:/Users/DELL/Documents/flight-management-system/json -IC:/Users/DELL/Documents/flight-management-system/sqlite
   OBJECT_DIR = CMakeFiles\flightSystem.dir
   OBJECT_FILE_DIR = CMakeFiles\flightSystem.dir\utilities
   TARGET_COMPILE_PDB = CMakeFiles\flightSystem.dir\
@@ -190,7 +201,7 @@ build CMakeFiles/flightSystem.dir/utilities/dateTime.cpp.obj: CXX_COMPILER__flig
   DEFINES = -DDATA_DIR=\"C:/Users/DELL/Documents/flight-management-system/data\"
   DEP_FILE = CMakeFiles\flightSystem.dir\utilities\dateTime.cpp.obj.d
   FLAGS = -O3 -DNDEBUG -std=c++17 -w
-  INCLUDES = -IC:/Users/DELL/Documents/flight-management-system -IC:/Users/DELL/Documents/flight-management-system/sqlite
+  INCLUDES = -IC:/Users/DELL/Documents/flight-management-system -IC:/Users/DELL/Documents/flight-management-system/json -IC:/Users/DELL/Documents/flight-management-system/sqlite
   OBJECT_DIR = CMakeFiles\flightSystem.dir
   OBJECT_FILE_DIR = CMakeFiles\flightSystem.dir\utilities
   TARGET_COMPILE_PDB = CMakeFiles\flightSystem.dir\
@@ -201,7 +212,7 @@ build CMakeFiles/flightSystem.dir/utilities/validator.cpp.obj: CXX_COMPILER__fli
   DEFINES = -DDATA_DIR=\"C:/Users/DELL/Documents/flight-management-system/data\"
   DEP_FILE = CMakeFiles\flightSystem.dir\utilities\validator.cpp.obj.d
   FLAGS = -O3 -DNDEBUG -std=c++17 -w
-  INCLUDES = -IC:/Users/DELL/Documents/flight-management-system -IC:/Users/DELL/Documents/flight-management-system/sqlite
+  INCLUDES = -IC:/Users/DELL/Documents/flight-management-system -IC:/Users/DELL/Documents/flight-management-system/json -IC:/Users/DELL/Documents/flight-management-system/sqlite
   OBJECT_DIR = CMakeFiles\flightSystem.dir
   OBJECT_FILE_DIR = CMakeFiles\flightSystem.dir\utilities
   TARGET_COMPILE_PDB = CMakeFiles\flightSystem.dir\
@@ -212,7 +223,7 @@ build CMakeFiles/flightSystem.dir/fileIO/textReader.cpp.obj: CXX_COMPILER__fligh
   DEFINES = -DDATA_DIR=\"C:/Users/DELL/Documents/flight-management-system/data\"
   DEP_FILE = CMakeFiles\flightSystem.dir\fileIO\textReader.cpp.obj.d
   FLAGS = -O3 -DNDEBUG -std=c++17 -w
-  INCLUDES = -IC:/Users/DELL/Documents/flight-management-system -IC:/Users/DELL/Documents/flight-management-system/sqlite
+  INCLUDES = -IC:/Users/DELL/Documents/flight-management-system -IC:/Users/DELL/Documents/flight-management-system/json -IC:/Users/DELL/Documents/flight-management-system/sqlite
   OBJECT_DIR = CMakeFiles\flightSystem.dir
   OBJECT_FILE_DIR = CMakeFiles\flightSystem.dir\fileIO
   TARGET_COMPILE_PDB = CMakeFiles\flightSystem.dir\
@@ -223,7 +234,7 @@ build CMakeFiles/flightSystem.dir/fileIO/textWriter.cpp.obj: CXX_COMPILER__fligh
   DEFINES = -DDATA_DIR=\"C:/Users/DELL/Documents/flight-management-system/data\"
   DEP_FILE = CMakeFiles\flightSystem.dir\fileIO\textWriter.cpp.obj.d
   FLAGS = -O3 -DNDEBUG -std=c++17 -w
-  INCLUDES = -IC:/Users/DELL/Documents/flight-management-system -IC:/Users/DELL/Documents/flight-management-system/sqlite
+  INCLUDES = -IC:/Users/DELL/Documents/flight-management-system -IC:/Users/DELL/Documents/flight-management-system/json -IC:/Users/DELL/Documents/flight-management-system/sqlite
   OBJECT_DIR = CMakeFiles\flightSystem.dir
   OBJECT_FILE_DIR = CMakeFiles\flightSystem.dir\fileIO
   TARGET_COMPILE_PDB = CMakeFiles\flightSystem.dir\
@@ -234,20 +245,9 @@ build CMakeFiles/flightSystem.dir/fileIO/dbHandler.cpp.obj: CXX_COMPILER__flight
   DEFINES = -DDATA_DIR=\"C:/Users/DELL/Documents/flight-management-system/data\"
   DEP_FILE = CMakeFiles\flightSystem.dir\fileIO\dbHandler.cpp.obj.d
   FLAGS = -O3 -DNDEBUG -std=c++17 -w
-  INCLUDES = -IC:/Users/DELL/Documents/flight-management-system -IC:/Users/DELL/Documents/flight-management-system/sqlite
+  INCLUDES = -IC:/Users/DELL/Documents/flight-management-system -IC:/Users/DELL/Documents/flight-management-system/json -IC:/Users/DELL/Documents/flight-management-system/sqlite
   OBJECT_DIR = CMakeFiles\flightSystem.dir
   OBJECT_FILE_DIR = CMakeFiles\flightSystem.dir\fileIO
-  TARGET_COMPILE_PDB = CMakeFiles\flightSystem.dir\
-  TARGET_PDB = flightSystem.pdb
-
-build CMakeFiles/flightSystem.dir/ui/menu.cpp.obj: CXX_COMPILER__flightSystem_unscanned_Release C$:/Users/DELL/Documents/flight-management-system/ui/menu.cpp || cmake_object_order_depends_target_flightSystem
-  CONFIG = Release
-  DEFINES = -DDATA_DIR=\"C:/Users/DELL/Documents/flight-management-system/data\"
-  DEP_FILE = CMakeFiles\flightSystem.dir\ui\menu.cpp.obj.d
-  FLAGS = -O3 -DNDEBUG -std=c++17 -w
-  INCLUDES = -IC:/Users/DELL/Documents/flight-management-system -IC:/Users/DELL/Documents/flight-management-system/sqlite
-  OBJECT_DIR = CMakeFiles\flightSystem.dir
-  OBJECT_FILE_DIR = CMakeFiles\flightSystem.dir\ui
   TARGET_COMPILE_PDB = CMakeFiles\flightSystem.dir\
   TARGET_PDB = flightSystem.pdb
 
@@ -259,7 +259,7 @@ build CMakeFiles/flightSystem.dir/ui/menu.cpp.obj: CXX_COMPILER__flightSystem_un
 #############################################
 # Link the executable flightSystem.exe
 
-build flightSystem.exe: CXX_EXECUTABLE_LINKER__flightSystem_Release CMakeFiles/flightSystem.dir/main.cpp.obj CMakeFiles/flightSystem.dir/entities/customer.cpp.obj CMakeFiles/flightSystem.dir/entities/flight.cpp.obj CMakeFiles/flightSystem.dir/entities/airport.cpp.obj CMakeFiles/flightSystem.dir/entities/plane.cpp.obj CMakeFiles/flightSystem.dir/entities/ticket.cpp.obj CMakeFiles/flightSystem.dir/entities/offer.cpp.obj CMakeFiles/flightSystem.dir/entities/manager.cpp.obj CMakeFiles/flightSystem.dir/utilities/idGenerator.cpp.obj CMakeFiles/flightSystem.dir/utilities/dateTime.cpp.obj CMakeFiles/flightSystem.dir/utilities/validator.cpp.obj CMakeFiles/flightSystem.dir/fileIO/textReader.cpp.obj CMakeFiles/flightSystem.dir/fileIO/textWriter.cpp.obj CMakeFiles/flightSystem.dir/fileIO/dbHandler.cpp.obj CMakeFiles/flightSystem.dir/ui/menu.cpp.obj | libsqlite3_static.a || libsqlite3_static.a
+build flightSystem.exe: CXX_EXECUTABLE_LINKER__flightSystem_Release CMakeFiles/flightSystem.dir/main.cpp.obj CMakeFiles/flightSystem.dir/ui/menu.cpp.obj CMakeFiles/flightSystem.dir/entities/customer.cpp.obj CMakeFiles/flightSystem.dir/entities/flight.cpp.obj CMakeFiles/flightSystem.dir/entities/airport.cpp.obj CMakeFiles/flightSystem.dir/entities/plane.cpp.obj CMakeFiles/flightSystem.dir/entities/ticket.cpp.obj CMakeFiles/flightSystem.dir/entities/offer.cpp.obj CMakeFiles/flightSystem.dir/entities/manager.cpp.obj CMakeFiles/flightSystem.dir/utilities/idGenerator.cpp.obj CMakeFiles/flightSystem.dir/utilities/dateTime.cpp.obj CMakeFiles/flightSystem.dir/utilities/validator.cpp.obj CMakeFiles/flightSystem.dir/fileIO/textReader.cpp.obj CMakeFiles/flightSystem.dir/fileIO/textWriter.cpp.obj CMakeFiles/flightSystem.dir/fileIO/dbHandler.cpp.obj | libsqlite3_static.a || libsqlite3_static.a
   CONFIG = Release
   FLAGS = -O3 -DNDEBUG
   LINK_LIBRARIES = libsqlite3_static.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
@@ -270,6 +270,200 @@ build flightSystem.exe: CXX_EXECUTABLE_LINKER__flightSystem_Release CMakeFiles/f
   TARGET_FILE = flightSystem.exe
   TARGET_IMPLIB = libflightSystem.dll.a
   TARGET_PDB = flightSystem.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target flightSystemJSON
+
+
+#############################################
+# Order-only phony target for flightSystemJSON
+
+build cmake_object_order_depends_target_flightSystemJSON: phony || cmake_object_order_depends_target_sqlite3_static
+
+build CMakeFiles/flightSystemJSON.dir/backend.cpp.obj: CXX_COMPILER__flightSystemJSON_unscanned_Release C$:/Users/DELL/Documents/flight-management-system/backend.cpp || cmake_object_order_depends_target_flightSystemJSON
+  CONFIG = Release
+  DEFINES = -DDATA_DIR=\"C:/Users/DELL/Documents/flight-management-system/data\"
+  DEP_FILE = CMakeFiles\flightSystemJSON.dir\backend.cpp.obj.d
+  FLAGS = -O3 -DNDEBUG -std=c++17 -w
+  INCLUDES = -IC:/Users/DELL/Documents/flight-management-system -IC:/Users/DELL/Documents/flight-management-system/json -IC:/Users/DELL/Documents/flight-management-system/sqlite
+  OBJECT_DIR = CMakeFiles\flightSystemJSON.dir
+  OBJECT_FILE_DIR = CMakeFiles\flightSystemJSON.dir
+  TARGET_COMPILE_PDB = CMakeFiles\flightSystemJSON.dir\
+  TARGET_PDB = flightSystemJSON.pdb
+
+build CMakeFiles/flightSystemJSON.dir/json/json-manager.cpp.obj: CXX_COMPILER__flightSystemJSON_unscanned_Release C$:/Users/DELL/Documents/flight-management-system/json/json-manager.cpp || cmake_object_order_depends_target_flightSystemJSON
+  CONFIG = Release
+  DEFINES = -DDATA_DIR=\"C:/Users/DELL/Documents/flight-management-system/data\"
+  DEP_FILE = CMakeFiles\flightSystemJSON.dir\json\json-manager.cpp.obj.d
+  FLAGS = -O3 -DNDEBUG -std=c++17 -w
+  INCLUDES = -IC:/Users/DELL/Documents/flight-management-system -IC:/Users/DELL/Documents/flight-management-system/json -IC:/Users/DELL/Documents/flight-management-system/sqlite
+  OBJECT_DIR = CMakeFiles\flightSystemJSON.dir
+  OBJECT_FILE_DIR = CMakeFiles\flightSystemJSON.dir\json
+  TARGET_COMPILE_PDB = CMakeFiles\flightSystemJSON.dir\
+  TARGET_PDB = flightSystemJSON.pdb
+
+build CMakeFiles/flightSystemJSON.dir/entities/customer.cpp.obj: CXX_COMPILER__flightSystemJSON_unscanned_Release C$:/Users/DELL/Documents/flight-management-system/entities/customer.cpp || cmake_object_order_depends_target_flightSystemJSON
+  CONFIG = Release
+  DEFINES = -DDATA_DIR=\"C:/Users/DELL/Documents/flight-management-system/data\"
+  DEP_FILE = CMakeFiles\flightSystemJSON.dir\entities\customer.cpp.obj.d
+  FLAGS = -O3 -DNDEBUG -std=c++17 -w
+  INCLUDES = -IC:/Users/DELL/Documents/flight-management-system -IC:/Users/DELL/Documents/flight-management-system/json -IC:/Users/DELL/Documents/flight-management-system/sqlite
+  OBJECT_DIR = CMakeFiles\flightSystemJSON.dir
+  OBJECT_FILE_DIR = CMakeFiles\flightSystemJSON.dir\entities
+  TARGET_COMPILE_PDB = CMakeFiles\flightSystemJSON.dir\
+  TARGET_PDB = flightSystemJSON.pdb
+
+build CMakeFiles/flightSystemJSON.dir/entities/flight.cpp.obj: CXX_COMPILER__flightSystemJSON_unscanned_Release C$:/Users/DELL/Documents/flight-management-system/entities/flight.cpp || cmake_object_order_depends_target_flightSystemJSON
+  CONFIG = Release
+  DEFINES = -DDATA_DIR=\"C:/Users/DELL/Documents/flight-management-system/data\"
+  DEP_FILE = CMakeFiles\flightSystemJSON.dir\entities\flight.cpp.obj.d
+  FLAGS = -O3 -DNDEBUG -std=c++17 -w
+  INCLUDES = -IC:/Users/DELL/Documents/flight-management-system -IC:/Users/DELL/Documents/flight-management-system/json -IC:/Users/DELL/Documents/flight-management-system/sqlite
+  OBJECT_DIR = CMakeFiles\flightSystemJSON.dir
+  OBJECT_FILE_DIR = CMakeFiles\flightSystemJSON.dir\entities
+  TARGET_COMPILE_PDB = CMakeFiles\flightSystemJSON.dir\
+  TARGET_PDB = flightSystemJSON.pdb
+
+build CMakeFiles/flightSystemJSON.dir/entities/airport.cpp.obj: CXX_COMPILER__flightSystemJSON_unscanned_Release C$:/Users/DELL/Documents/flight-management-system/entities/airport.cpp || cmake_object_order_depends_target_flightSystemJSON
+  CONFIG = Release
+  DEFINES = -DDATA_DIR=\"C:/Users/DELL/Documents/flight-management-system/data\"
+  DEP_FILE = CMakeFiles\flightSystemJSON.dir\entities\airport.cpp.obj.d
+  FLAGS = -O3 -DNDEBUG -std=c++17 -w
+  INCLUDES = -IC:/Users/DELL/Documents/flight-management-system -IC:/Users/DELL/Documents/flight-management-system/json -IC:/Users/DELL/Documents/flight-management-system/sqlite
+  OBJECT_DIR = CMakeFiles\flightSystemJSON.dir
+  OBJECT_FILE_DIR = CMakeFiles\flightSystemJSON.dir\entities
+  TARGET_COMPILE_PDB = CMakeFiles\flightSystemJSON.dir\
+  TARGET_PDB = flightSystemJSON.pdb
+
+build CMakeFiles/flightSystemJSON.dir/entities/plane.cpp.obj: CXX_COMPILER__flightSystemJSON_unscanned_Release C$:/Users/DELL/Documents/flight-management-system/entities/plane.cpp || cmake_object_order_depends_target_flightSystemJSON
+  CONFIG = Release
+  DEFINES = -DDATA_DIR=\"C:/Users/DELL/Documents/flight-management-system/data\"
+  DEP_FILE = CMakeFiles\flightSystemJSON.dir\entities\plane.cpp.obj.d
+  FLAGS = -O3 -DNDEBUG -std=c++17 -w
+  INCLUDES = -IC:/Users/DELL/Documents/flight-management-system -IC:/Users/DELL/Documents/flight-management-system/json -IC:/Users/DELL/Documents/flight-management-system/sqlite
+  OBJECT_DIR = CMakeFiles\flightSystemJSON.dir
+  OBJECT_FILE_DIR = CMakeFiles\flightSystemJSON.dir\entities
+  TARGET_COMPILE_PDB = CMakeFiles\flightSystemJSON.dir\
+  TARGET_PDB = flightSystemJSON.pdb
+
+build CMakeFiles/flightSystemJSON.dir/entities/ticket.cpp.obj: CXX_COMPILER__flightSystemJSON_unscanned_Release C$:/Users/DELL/Documents/flight-management-system/entities/ticket.cpp || cmake_object_order_depends_target_flightSystemJSON
+  CONFIG = Release
+  DEFINES = -DDATA_DIR=\"C:/Users/DELL/Documents/flight-management-system/data\"
+  DEP_FILE = CMakeFiles\flightSystemJSON.dir\entities\ticket.cpp.obj.d
+  FLAGS = -O3 -DNDEBUG -std=c++17 -w
+  INCLUDES = -IC:/Users/DELL/Documents/flight-management-system -IC:/Users/DELL/Documents/flight-management-system/json -IC:/Users/DELL/Documents/flight-management-system/sqlite
+  OBJECT_DIR = CMakeFiles\flightSystemJSON.dir
+  OBJECT_FILE_DIR = CMakeFiles\flightSystemJSON.dir\entities
+  TARGET_COMPILE_PDB = CMakeFiles\flightSystemJSON.dir\
+  TARGET_PDB = flightSystemJSON.pdb
+
+build CMakeFiles/flightSystemJSON.dir/entities/offer.cpp.obj: CXX_COMPILER__flightSystemJSON_unscanned_Release C$:/Users/DELL/Documents/flight-management-system/entities/offer.cpp || cmake_object_order_depends_target_flightSystemJSON
+  CONFIG = Release
+  DEFINES = -DDATA_DIR=\"C:/Users/DELL/Documents/flight-management-system/data\"
+  DEP_FILE = CMakeFiles\flightSystemJSON.dir\entities\offer.cpp.obj.d
+  FLAGS = -O3 -DNDEBUG -std=c++17 -w
+  INCLUDES = -IC:/Users/DELL/Documents/flight-management-system -IC:/Users/DELL/Documents/flight-management-system/json -IC:/Users/DELL/Documents/flight-management-system/sqlite
+  OBJECT_DIR = CMakeFiles\flightSystemJSON.dir
+  OBJECT_FILE_DIR = CMakeFiles\flightSystemJSON.dir\entities
+  TARGET_COMPILE_PDB = CMakeFiles\flightSystemJSON.dir\
+  TARGET_PDB = flightSystemJSON.pdb
+
+build CMakeFiles/flightSystemJSON.dir/entities/manager.cpp.obj: CXX_COMPILER__flightSystemJSON_unscanned_Release C$:/Users/DELL/Documents/flight-management-system/entities/manager.cpp || cmake_object_order_depends_target_flightSystemJSON
+  CONFIG = Release
+  DEFINES = -DDATA_DIR=\"C:/Users/DELL/Documents/flight-management-system/data\"
+  DEP_FILE = CMakeFiles\flightSystemJSON.dir\entities\manager.cpp.obj.d
+  FLAGS = -O3 -DNDEBUG -std=c++17 -w
+  INCLUDES = -IC:/Users/DELL/Documents/flight-management-system -IC:/Users/DELL/Documents/flight-management-system/json -IC:/Users/DELL/Documents/flight-management-system/sqlite
+  OBJECT_DIR = CMakeFiles\flightSystemJSON.dir
+  OBJECT_FILE_DIR = CMakeFiles\flightSystemJSON.dir\entities
+  TARGET_COMPILE_PDB = CMakeFiles\flightSystemJSON.dir\
+  TARGET_PDB = flightSystemJSON.pdb
+
+build CMakeFiles/flightSystemJSON.dir/utilities/idGenerator.cpp.obj: CXX_COMPILER__flightSystemJSON_unscanned_Release C$:/Users/DELL/Documents/flight-management-system/utilities/idGenerator.cpp || cmake_object_order_depends_target_flightSystemJSON
+  CONFIG = Release
+  DEFINES = -DDATA_DIR=\"C:/Users/DELL/Documents/flight-management-system/data\"
+  DEP_FILE = CMakeFiles\flightSystemJSON.dir\utilities\idGenerator.cpp.obj.d
+  FLAGS = -O3 -DNDEBUG -std=c++17 -w
+  INCLUDES = -IC:/Users/DELL/Documents/flight-management-system -IC:/Users/DELL/Documents/flight-management-system/json -IC:/Users/DELL/Documents/flight-management-system/sqlite
+  OBJECT_DIR = CMakeFiles\flightSystemJSON.dir
+  OBJECT_FILE_DIR = CMakeFiles\flightSystemJSON.dir\utilities
+  TARGET_COMPILE_PDB = CMakeFiles\flightSystemJSON.dir\
+  TARGET_PDB = flightSystemJSON.pdb
+
+build CMakeFiles/flightSystemJSON.dir/utilities/dateTime.cpp.obj: CXX_COMPILER__flightSystemJSON_unscanned_Release C$:/Users/DELL/Documents/flight-management-system/utilities/dateTime.cpp || cmake_object_order_depends_target_flightSystemJSON
+  CONFIG = Release
+  DEFINES = -DDATA_DIR=\"C:/Users/DELL/Documents/flight-management-system/data\"
+  DEP_FILE = CMakeFiles\flightSystemJSON.dir\utilities\dateTime.cpp.obj.d
+  FLAGS = -O3 -DNDEBUG -std=c++17 -w
+  INCLUDES = -IC:/Users/DELL/Documents/flight-management-system -IC:/Users/DELL/Documents/flight-management-system/json -IC:/Users/DELL/Documents/flight-management-system/sqlite
+  OBJECT_DIR = CMakeFiles\flightSystemJSON.dir
+  OBJECT_FILE_DIR = CMakeFiles\flightSystemJSON.dir\utilities
+  TARGET_COMPILE_PDB = CMakeFiles\flightSystemJSON.dir\
+  TARGET_PDB = flightSystemJSON.pdb
+
+build CMakeFiles/flightSystemJSON.dir/utilities/validator.cpp.obj: CXX_COMPILER__flightSystemJSON_unscanned_Release C$:/Users/DELL/Documents/flight-management-system/utilities/validator.cpp || cmake_object_order_depends_target_flightSystemJSON
+  CONFIG = Release
+  DEFINES = -DDATA_DIR=\"C:/Users/DELL/Documents/flight-management-system/data\"
+  DEP_FILE = CMakeFiles\flightSystemJSON.dir\utilities\validator.cpp.obj.d
+  FLAGS = -O3 -DNDEBUG -std=c++17 -w
+  INCLUDES = -IC:/Users/DELL/Documents/flight-management-system -IC:/Users/DELL/Documents/flight-management-system/json -IC:/Users/DELL/Documents/flight-management-system/sqlite
+  OBJECT_DIR = CMakeFiles\flightSystemJSON.dir
+  OBJECT_FILE_DIR = CMakeFiles\flightSystemJSON.dir\utilities
+  TARGET_COMPILE_PDB = CMakeFiles\flightSystemJSON.dir\
+  TARGET_PDB = flightSystemJSON.pdb
+
+build CMakeFiles/flightSystemJSON.dir/fileIO/textReader.cpp.obj: CXX_COMPILER__flightSystemJSON_unscanned_Release C$:/Users/DELL/Documents/flight-management-system/fileIO/textReader.cpp || cmake_object_order_depends_target_flightSystemJSON
+  CONFIG = Release
+  DEFINES = -DDATA_DIR=\"C:/Users/DELL/Documents/flight-management-system/data\"
+  DEP_FILE = CMakeFiles\flightSystemJSON.dir\fileIO\textReader.cpp.obj.d
+  FLAGS = -O3 -DNDEBUG -std=c++17 -w
+  INCLUDES = -IC:/Users/DELL/Documents/flight-management-system -IC:/Users/DELL/Documents/flight-management-system/json -IC:/Users/DELL/Documents/flight-management-system/sqlite
+  OBJECT_DIR = CMakeFiles\flightSystemJSON.dir
+  OBJECT_FILE_DIR = CMakeFiles\flightSystemJSON.dir\fileIO
+  TARGET_COMPILE_PDB = CMakeFiles\flightSystemJSON.dir\
+  TARGET_PDB = flightSystemJSON.pdb
+
+build CMakeFiles/flightSystemJSON.dir/fileIO/textWriter.cpp.obj: CXX_COMPILER__flightSystemJSON_unscanned_Release C$:/Users/DELL/Documents/flight-management-system/fileIO/textWriter.cpp || cmake_object_order_depends_target_flightSystemJSON
+  CONFIG = Release
+  DEFINES = -DDATA_DIR=\"C:/Users/DELL/Documents/flight-management-system/data\"
+  DEP_FILE = CMakeFiles\flightSystemJSON.dir\fileIO\textWriter.cpp.obj.d
+  FLAGS = -O3 -DNDEBUG -std=c++17 -w
+  INCLUDES = -IC:/Users/DELL/Documents/flight-management-system -IC:/Users/DELL/Documents/flight-management-system/json -IC:/Users/DELL/Documents/flight-management-system/sqlite
+  OBJECT_DIR = CMakeFiles\flightSystemJSON.dir
+  OBJECT_FILE_DIR = CMakeFiles\flightSystemJSON.dir\fileIO
+  TARGET_COMPILE_PDB = CMakeFiles\flightSystemJSON.dir\
+  TARGET_PDB = flightSystemJSON.pdb
+
+build CMakeFiles/flightSystemJSON.dir/fileIO/dbHandler.cpp.obj: CXX_COMPILER__flightSystemJSON_unscanned_Release C$:/Users/DELL/Documents/flight-management-system/fileIO/dbHandler.cpp || cmake_object_order_depends_target_flightSystemJSON
+  CONFIG = Release
+  DEFINES = -DDATA_DIR=\"C:/Users/DELL/Documents/flight-management-system/data\"
+  DEP_FILE = CMakeFiles\flightSystemJSON.dir\fileIO\dbHandler.cpp.obj.d
+  FLAGS = -O3 -DNDEBUG -std=c++17 -w
+  INCLUDES = -IC:/Users/DELL/Documents/flight-management-system -IC:/Users/DELL/Documents/flight-management-system/json -IC:/Users/DELL/Documents/flight-management-system/sqlite
+  OBJECT_DIR = CMakeFiles\flightSystemJSON.dir
+  OBJECT_FILE_DIR = CMakeFiles\flightSystemJSON.dir\fileIO
+  TARGET_COMPILE_PDB = CMakeFiles\flightSystemJSON.dir\
+  TARGET_PDB = flightSystemJSON.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target flightSystemJSON
+
+
+#############################################
+# Link the executable flightSystemJSON.exe
+
+build flightSystemJSON.exe: CXX_EXECUTABLE_LINKER__flightSystemJSON_Release CMakeFiles/flightSystemJSON.dir/backend.cpp.obj CMakeFiles/flightSystemJSON.dir/json/json-manager.cpp.obj CMakeFiles/flightSystemJSON.dir/entities/customer.cpp.obj CMakeFiles/flightSystemJSON.dir/entities/flight.cpp.obj CMakeFiles/flightSystemJSON.dir/entities/airport.cpp.obj CMakeFiles/flightSystemJSON.dir/entities/plane.cpp.obj CMakeFiles/flightSystemJSON.dir/entities/ticket.cpp.obj CMakeFiles/flightSystemJSON.dir/entities/offer.cpp.obj CMakeFiles/flightSystemJSON.dir/entities/manager.cpp.obj CMakeFiles/flightSystemJSON.dir/utilities/idGenerator.cpp.obj CMakeFiles/flightSystemJSON.dir/utilities/dateTime.cpp.obj CMakeFiles/flightSystemJSON.dir/utilities/validator.cpp.obj CMakeFiles/flightSystemJSON.dir/fileIO/textReader.cpp.obj CMakeFiles/flightSystemJSON.dir/fileIO/textWriter.cpp.obj CMakeFiles/flightSystemJSON.dir/fileIO/dbHandler.cpp.obj | libsqlite3_static.a || libsqlite3_static.a
+  CONFIG = Release
+  FLAGS = -O3 -DNDEBUG
+  LINK_LIBRARIES = libsqlite3_static.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\flightSystemJSON.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\flightSystemJSON.dir\
+  TARGET_FILE = flightSystemJSON.exe
+  TARGET_IMPLIB = libflightSystemJSON.dll.a
+  TARGET_PDB = flightSystemJSON.pdb
 
 
 #############################################
@@ -342,6 +536,8 @@ build install/strip: phony CMakeFiles/install/strip.util
 
 build flightSystem: phony flightSystem.exe
 
+build flightSystemJSON: phony flightSystemJSON.exe
+
 build sqlite3_static: phony libsqlite3_static.a
 
 # =============================================================================
@@ -352,7 +548,7 @@ build sqlite3_static: phony libsqlite3_static.a
 #############################################
 # Folder: C:/Users/DELL/Documents/flight-management-system/build
 
-build all: phony libsqlite3_static.a flightSystem.exe
+build all: phony libsqlite3_static.a flightSystem.exe flightSystemJSON.exe
 
 # =============================================================================
 # Built-in targets

@@ -27,6 +27,7 @@ endif()
 # Include directories
 # ---------------------------
 include_directories(${CMAKE_SOURCE_DIR})
+include_directories(${CMAKE_SOURCE_DIR}/json)
 
 # ---------------------------
 # SQLite static library
@@ -37,12 +38,10 @@ set_property(TARGET sqlite3_static PROPERTY POSITION_INDEPENDENT_CODE ON)
 target_include_directories(sqlite3_static PUBLIC ${CMAKE_SOURCE_DIR}/sqlite)
 
 # ---------------------------
-# Collect all project sources
+# Common sources (used by both executables)
 # ---------------------------
-set(PROJECT_SOURCES
-    main.cpp
-
-    # Entities
+set(COMMON_SOURCES
+    # Entities (includes manager)
     entities/customer.cpp
     entities/flight.cpp
     entities/airport.cpp
@@ -60,30 +59,48 @@ set(PROJECT_SOURCES
     fileIO/textReader.cpp
     fileIO/textWriter.cpp
     fileIO/dbHandler.cpp
-
-    # UI
-    ui/menu.cpp
 )
 
 # ---------------------------
-# Build executable directly from all sources
+# Console version (with menu UI)
 # ---------------------------
-add_executable(flightSystem ${PROJECT_SOURCES})
+set(CONSOLE_SOURCES
+    main.cpp
+    ui/menu.cpp
+    ${COMMON_SOURCES}
+)
 
+add_executable(flightSystem ${CONSOLE_SOURCES})
 target_include_directories(flightSystem PRIVATE ${CMAKE_SOURCE_DIR})
-
-# ---------------------------
-# Link only SQLite static library
-# ---------------------------
 target_link_libraries(flightSystem PRIVATE sqlite3_static)
+target_compile_definitions(flightSystem PRIVATE DATA_DIR="${CMAKE_SOURCE_DIR}/data")
 
 # ---------------------------
-# Define DATA_DIR macro for runtime access
+# JSON version (for Electron) - backend
 # ---------------------------
-target_compile_definitions(flightSystem PRIVATE DATA_DIR="${CMAKE_SOURCE_DIR}/data")
+set(JSON_SOURCES
+    backend.cpp
+    json/json-manager.cpp
+    ${COMMON_SOURCES}
+)
+
+add_executable(flightSystemJSON ${JSON_SOURCES})
+target_include_directories(flightSystemJSON PRIVATE ${CMAKE_SOURCE_DIR} ${CMAKE_SOURCE_DIR}/json)
+target_link_libraries(flightSystemJSON PRIVATE sqlite3_static)
+target_compile_definitions(flightSystemJSON PRIVATE DATA_DIR="${CMAKE_SOURCE_DIR}/data")
 
 # ---------------------------
 # Install rules
 # ---------------------------
-install(TARGETS flightSystem DESTINATION bin)
+install(TARGETS flightSystem flightSystemJSON DESTINATION bin)
 install(DIRECTORY ${CMAKE_SOURCE_DIR}/data DESTINATION .)
+
+# ---------------------------
+# Print build info
+# ---------------------------
+message(STATUS "Build type: ${CMAKE_BUILD_TYPE}")
+message(STATUS "C++ Standard: ${CMAKE_CXX_STANDARD}")
+message(STATUS "Building two executables:")
+message(STATUS "  - flightSystem (Console UI - main.cpp)")
+message(STATUS "  - flightSystemJSON (Electron Backend - backend.cpp)")
+message(STATUS "Database: system-data.db")

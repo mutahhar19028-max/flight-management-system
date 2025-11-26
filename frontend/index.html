@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Books Flights-Book & Fly From Pakistan</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Shanti&display=swap" rel="stylesheet"/>
+</head>
+<body>
+    <div id="header"></div>
+    <div id="booking"></div>
+    <div id="deals"></div>
+    <div id="footer"></div>
+
+    <script src="renderer.js"></script>
+    <script>
+        // Log page load
+        console.log('=== index.html loading ===');
+        if (window.api && window.api.logAction) {
+            window.api.logAction('index.html: Page loaded, loading HTML modules');
+        }
+
+        // Load HTML modules with logging
+        $('#header').load('header.html', function(response, status, xhr) {
+            if (status === "error") {
+                console.error('Failed to load header.html:', xhr.status, xhr.statusText);
+                window.api.logAction('index.html: ERROR loading header.html - ' + xhr.statusText);
+            } else {
+                console.log('✓ header.html loaded');
+                window.api.logAction('index.html: header.html loaded successfully');
+            }
+        });
+
+        $('#booking').load('booking.html', function(response, status, xhr) {
+            if (status === "error") {
+                console.error('Failed to load booking.html:', xhr.status, xhr.statusText);
+                window.api.logAction('index.html: ERROR loading booking.html - ' + xhr.statusText);
+            } else {
+                console.log('✓ booking.html loaded');
+                window.api.logAction('index.html: booking.html loaded successfully');
+            }
+        });
+
+        $('#deals').load('deals.html', function(response, status, xhr) {
+            if (status === "error") {
+                console.error('Failed to load deals.html:', xhr.status, xhr.statusText);
+                window.api.logAction('index.html: ERROR loading deals.html - ' + xhr.statusText);
+            } else {
+                console.log('✓ deals.html loaded');
+                window.api.logAction('index.html: deals.html loaded successfully');
+            }
+        });
+
+        $('#footer').load('footer.html', function(response, status, xhr) {
+            if (status === "error") {
+                console.error('Failed to load footer.html:', xhr.status, xhr.statusText);
+                window.api.logAction('index.html: ERROR loading footer.html - ' + xhr.statusText);
+            } else {
+                console.log('✓ footer.html loaded');
+                window.api.logAction('index.html: footer.html loaded successfully');
+            }
+        });
+
+        console.log('=== index.html: All module loads initiated ===');
+    </script>
+</body>
+</html>

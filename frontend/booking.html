@@ -1,0 +1,104 @@
+<div class="container">
+  <div class="crd">
+    <div class="crd-main">
+      <ul class="nav">
+        <li class="nav-items">
+          <a class="nav-link active" data-toggle="tab" href="#Book">
+            <i class="fal fa-plane"></i> Book Flight
+          </a>
+        </li>
+        <li class="nav-items">
+          <a class="nav-link" data-toggle="tab" href="#MyBookings">
+            <i class="fal fa-suitcase"></i> My Bookings
+          </a>
+        </li>
+        <li class="nav-items">
+          <a class="nav-link" data-toggle="tab" href="#Update">
+            <i class="fal fa-check-circle"></i> Update Booking
+          </a>
+        </li>
+        <li class="nav-items">
+          <a class="nav-link" data-toggle="tab" href="#Cancel">
+            <i class="fal fa-times-circle"></i> Cancel Booking
+          </a>
+        </li>
+      </ul>
+
+      <div class="tab-content">
+        <!-- BOOK FLIGHT TAB -->
+        <div id="Book" class="tab-pane active">
+          <div class="con">
+            <h5>Book Your Flight</h5>
+            <div style="margin-bottom: 15px; padding: 10px; background: #f0f0f0; border-radius: 5px;">
+              <strong>Customer ID:</strong> <span id="current-customer-id">Loading...</span>
+              <button id="change-customer-btn" style="margin-left: 20px; padding: 5px 15px; background: #5c0931; color: white; border: none; border-radius: 4px; cursor: pointer;">
+                Change Customer
+              </button>
+            </div>
+            
+            <div class="input_wrap">
+              <input type="text" class="float" value="Islamabad" disabled />
+              <label>From</label>
+            </div>
+            
+            <div class="input_wrap">
+              <input id="destination-input" type="text" class="float" placeholder="Enter destination" />
+              <label>To</label>
+            </div>
+            
+            <div class="input_wrap">
+              <input id="flight-number-input" type="text" class="float" placeholder="Enter flight number" />
+              <label>Flight Number</label>
+            </div>
+            
+            <select id="ticket-type-select" style="border: 1px solid rgb(200, 200, 200); width: 200px;">
+              <option value="Economy">Economy</option>
+              <option value="Business">Business</option>
+            </select>
+          </div>
+          <div class="con2 d-flex justify-content-center">
+            <button id="book-flight-btn" class="btn btn-book">
+              <i class="fas fa-plane-departure"></i> Book Flight
+            </button>
+            <button id="show-database-btn" class="btn btn-show">
+              <i class="fas fa-database"></i> View Database
+            </button>
+          </div>
+        </div>
+
+        <!-- MY BOOKINGS TAB -->
+        <div id="MyBookings" class="tab-pane fade show">
+          <div class="con">
+            <h5>View My Bookings</h5>
+            <p>Customer ID: <span id="mybookings-customer-id"></span></p>
+            <div id="bookings-list" style="margin-top: 20px;"></div>
+            <button id="refresh-bookings-btn" style="margin-top: 20px;">Refresh Bookings</button>
+          </div>
+        </div>
+
+        <!-- UPDATE BOOKING TAB -->
+        <div id="Update" class="tab-pane fade show">
+          <div class="con">
+            <h5>Update Your Booking</h5>
+            <input id="update-ticket-number" type="text" placeholder="Ticket Number" style="width: 320px" />
+            <input id="update-new-flight" type="text" placeholder="New Flight Number" style="width: 320px" />
+            <select id="update-new-ticket-type" style="width: 320px; border: 1px solid rgb(200, 200, 200);">
+              <option value="Economy">Economy</option>
+              <option value="Business">Business</option>
+            </select>
+            <button id="update-booking-btn">Update Booking</button>
+          </div>
+        </div>
+
+        <!-- CANCEL BOOKING TAB -->
+        <div id="Cancel" class="tab-pane fade show">
+          <div class="con">
+            <h5>Cancel Your Booking</h5>
+            <input id="cancel-ticket-number" type="text" placeholder="Ticket Number" style="width: 320px" />
+            <button id="cancel-booking-btn">Cancel Booking</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
