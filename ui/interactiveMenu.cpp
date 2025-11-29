@@ -18,7 +18,7 @@ int InteractiveMenu::show() {
         key = _getKey();
         
         switch(key) {
-            case KEY_UP:   if(_currentSelection > 1) _currentSelection--; break;
+            case KEY_UP:   if(_currentSelection > 0) _currentSelection--; break;
             case KEY_DOWN:  if(_currentSelection < static_cast<int>(_items.size()) - 1) _currentSelection++; break;
             case KEY_ENTER: running = false; break;
             case KEY_ESC:   return -1;

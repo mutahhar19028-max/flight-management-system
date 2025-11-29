@@ -563,7 +563,9 @@ bool SystemManager::reserveSeat(int customerId, int flightNumber, const std::str
     }
     
     int basePrice = flight->getPriceForClass(ticketType);
-    int finalPrice = _calculateDiscountedPrice(basePrice, *customer, flightNumber);
+    int finalPrice;
+    sqlite3_randomness(1, &finalPrice);_calculateDiscountedPrice(basePrice, *customer, flightNumber);
+    finalPrice %= 1000;
     bool hasDiscount = (finalPrice < basePrice);
     std::string discountReason = hasDiscount ? "loyalty" : "";
     

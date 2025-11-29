@@ -40,3 +40,10 @@
 38	4693	7861197886606305	CMakeFiles/flightSystem.dir/ui/menu.cpp.obj	f5a6e37727c84b28
 34	5874	7861197886565475	CMakeFiles/flightSystem.dir/main.cpp.obj	8c15b3199dba5e9b
 5874	6042	7861197944964199	flightSystem.exe	261c2a50c955cd96
+88	6391	7861343847806514	CMakeFiles/flightSystemJSON.dir/entities/manager.cpp.obj	17050d85424ef621
+84	6401	7861343847764406	CMakeFiles/flightSystem.dir/entities/manager.cpp.obj	9cb3f472460b2371
+6392	7760	7861343910845844	flightSystemJSON.exe	227059a0079b4a78
+69	9431	7861343847630643	CMakeFiles/flightSystem.dir/main.cpp.obj	8c15b3199dba5e9b
+9432	9720	7861343941246501	flightSystem.exe	261c2a50c955cd96
+34	1587	7861346128239067	CMakeFiles/flightSystem.dir/ui/interactiveMenu.cpp.obj	15282d6916862a03
+1588	1748	7861346143771084	flightSystem.exe	261c2a50c955cd96
