@@ -583,6 +583,10 @@ bool SystemManager::reserveSeat(int customerId, int flightNumber, const std::str
         customer->updateMilesTraveled(airport->getMilesFromIslamabad());
     }
     customer->updateNumOfFlights(1);
+
+    std::cout << "\n========== RESERVATION SUCCESSFUL ==========" << std::endl;
+    ticket.print();
+    std::cout << "============================================" << std::endl;
     
     _saveToDatabase();
     

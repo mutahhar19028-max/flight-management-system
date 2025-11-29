@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Run FlightReservationSystem (External Console)",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/flightSystem.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "externalConsole": true,
+            "MIMode": "gdb",
+            "miDebuggerPath": "gdb",
+            "environment": [],
+            "preLaunchTask": "build-ninja"
+        }
+    ]
+}
