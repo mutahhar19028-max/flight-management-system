@@ -6,7 +6,6 @@ using std::cout;
 using std::endl;
 using std::string;
 
-// Constructors
 Ticket::Ticket() : customerId(0), customerName(""), flightNum(0), ticketNumber(0),
                    ticketType(""), costOfFlight(0), discount(false), 
                    reasonForDiscount(""), dateTime(""), seatNumber(0) {}
@@ -17,7 +16,6 @@ Ticket::Ticket(int custId, string custName, int fNum, int tNum, string tType,
       ticketType(tType), costOfFlight(cost), discount(disc), 
       reasonForDiscount(reason), dateTime(dt), seatNumber(seat) {}
 
-// Getters
 int Ticket::getCustomerId() const { return customerId; }
 string Ticket::getCustomerName() const { return customerName; }
 int Ticket::getFlightNum() const { return flightNum; }
@@ -29,7 +27,6 @@ string Ticket::getReasonForDiscount() const { return reasonForDiscount; }
 string Ticket::getDateTime() const { return dateTime; }
 int Ticket::getSeatNumber() const { return seatNumber; }
 
-// Setters
 void Ticket::setCustomerId(int custId) { customerId = custId; }
 void Ticket::setCustomerName(string custName) { customerName = custName; }
 void Ticket::setFlightNum(int fNum) { flightNum = fNum; }
@@ -41,7 +38,6 @@ void Ticket::setReasonForDiscount(string reason) { reasonForDiscount = reason; }
 void Ticket::setDateTime(string dt) { dateTime = dt; }
 void Ticket::setSeatNumber(int seat) { seatNumber = seat; }
 
-// Display
 void Ticket::print() const {
     cout << "\n======== TICKET ========" << endl;
     cout << "Ticket Number: " << ticketNumber << endl;

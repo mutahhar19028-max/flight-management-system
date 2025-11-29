@@ -2,9 +2,6 @@
 #include <iostream>
 #include <iomanip>
 
-// ═══════════════════════════════════════════════════════════
-//  SCREEN MANAGEMENT
-// ═══════════════════════════════════════════════════════════
 void UIRenderer::clearScreen() {
     std::cout << "\033[2J\033[H";
 }
@@ -21,9 +18,6 @@ void UIRenderer::showCursor() {
     std::cout << "\033[?25h" << std::flush;
 }
 
-// ═══════════════════════════════════════════════════════════
-//  BOX DRAWING
-// ═══════════════════════════════════════════════════════════
 void UIRenderer::drawBoxTop(int width, std::string_view title) {
     std::cout << Theme::PRIMARY << "╔";
     
@@ -84,9 +78,6 @@ void UIRenderer::drawFullBox(int width, std::string_view title, const std::vecto
     drawBoxBottom(width);
 }
 
-// ═══════════════════════════════════════════════════════════
-//  TEXT EFFECTS
-// ═══════════════════════════════════════════════════════════
 void UIRenderer::typeText(std::string_view text, int delay_ms) {
     for (char c : text) {
         std::cout << c << std::flush;
@@ -106,9 +97,6 @@ void UIRenderer::printCentered(std::string_view text, int width) {
     std::cout << text << "\n";
 }
 
-// ═══════════════════════════════════════════════════════════
-//  STATUS MESSAGES
-// ═══════════════════════════════════════════════════════════
 void UIRenderer::successMessage(std::string_view message) {
     std::cout << Theme::SUCCESS << "✓ " << message << Theme::RESET << "\n";
     sleep(Theme::LINE_DELAY);
@@ -129,9 +117,6 @@ void UIRenderer::infoMessage(std::string_view message) {
     sleep(Theme::LINE_DELAY);
 }
 
-// ═══════════════════════════════════════════════════════════
-//  LOADING ANIMATIONS
-// ═══════════════════════════════════════════════════════════
 void UIRenderer::showSpinner(std::string_view message, int duration_ms) {
     hideCursor();
     int frames = duration_ms / Theme::SPINNER_SPEED;
@@ -158,9 +143,6 @@ void UIRenderer::progressBar(int percentage, int width) {
     std::cout << Theme::RESET << "] " << std::format("{:3}%", percentage) << "\n";
 }
 
-// ═══════════════════════════════════════════════════════════
-//  MENU HELPERS
-// ═══════════════════════════════════════════════════════════
 void UIRenderer::printMenuItem(int number, std::string_view icon, std::string_view text) {
     std::cout << Theme::PRIMARY << "║  " << Theme::BOLD << Theme::ACCENT 
               << icon << "  " << Theme::RESET << Theme::SECONDARY 
@@ -179,9 +161,6 @@ void UIRenderer::printSeparator(int width, char fillChar) {
     std::cout << Theme::RESET << "\n";
 }
 
-// ═══════════════════════════════════════════════════════════
-//  UTILITIES
-// ═══════════════════════════════════════════════════════════
 void UIRenderer::pause(std::string_view message) {
     std::cout << "\n" << Theme::DIM << message << Theme::RESET << std::flush;
     std::cin.get();

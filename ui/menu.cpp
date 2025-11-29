@@ -14,7 +14,6 @@ void Menu::run() {
         return;
     }
     
-    // Welcome animation
     UIRenderer::clearScreen();
     UIRenderer::sleep(100);
     
@@ -28,7 +27,6 @@ void Menu::run() {
     while (choice != 6) {
         UIRenderer::clearScreen();
         
-        // Create interactive main menu
         InteractiveMenu mainMenu("MAIN MENU", {
             {"  ", " Flight Reservation ", 1},
             {"  ", " Customers ", 2},
@@ -40,7 +38,7 @@ void Menu::run() {
         
         choice = mainMenu.show();
         
-        if (choice == -1) continue;  // ESC pressed
+        if (choice == -1) continue; 
         
         switch (choice) {
             case 1:
@@ -94,7 +92,7 @@ void Menu::_handleFlightReservation() {
         
         choice = menu.show();
         
-        if (choice == -1) choice = 5;  // ESC = back
+        if (choice == -1) choice = 5; 
         
         switch (choice) {
             case 1: _searchFlights(); break;
@@ -121,7 +119,7 @@ void Menu::_handleCustomers() {
         
         choice = menu.show();
         
-        if (choice == -1) choice = 5;  // ESC = back
+        if (choice == -1) choice = 5;
         
         switch (choice) {
             case 1: _addCustomer(); break;
@@ -148,7 +146,7 @@ void Menu::_handleFlights() {
         
         choice = menu.show();
         
-        if (choice == -1) choice = 5;  // ESC = back
+        if (choice == -1) choice = 5;
         
         switch (choice) {
             case 1: _addFlight(); break;

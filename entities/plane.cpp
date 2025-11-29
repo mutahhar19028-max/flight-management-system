@@ -5,13 +5,11 @@ using std::cout;
 using std::endl;
 using std::string;
 
-// Constructors
 Plane::Plane() : planeId(0), description(""), numberOfMilesTraveled(0) {}
 
 Plane::Plane(int id, string desc, int miles)
     : planeId(id), description(desc), numberOfMilesTraveled(miles) {}
 
-// Getters
 int Plane::getPlaneId() const { return planeId; }
 string Plane::getDescription() const { return description; }
 int Plane::getNumberOfMilesTraveled() const { return numberOfMilesTraveled; }
@@ -36,7 +34,6 @@ int Plane::getTotalSeats() const {
     return total;
 }
 
-// Setters
 void Plane::setPlaneId(int id) { planeId = id; }
 void Plane::setDescription(string desc) { description = desc; }
 void Plane::setNumberOfMilesTraveled(int miles) { numberOfMilesTraveled = miles; }
@@ -51,12 +48,10 @@ void Plane::addClassPrice(string className, int price) {
     classPricing[className] = price;
 }
 
-// Update functions
 void Plane::updateNumberOfMilesTraveled(int miles) {
     numberOfMilesTraveled += miles;
 }
 
-// Display
 void Plane::display() const {
     cout << "\n===== Plane Info =====" << endl;
     cout << "Plane ID: " << planeId << endl;

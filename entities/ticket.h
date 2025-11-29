@@ -11,20 +11,18 @@ private:
     string customerName;
     int flightNum;
     int ticketNumber;
-    string ticketType; // Economy, Business, etc.
+    string ticketType;
     int costOfFlight;
-    bool discount; // 0 = no discount, 1 = discount applied
-    string reasonForDiscount; // "miles", "flights", "seasonal", etc.
-    string dateTime; // format: DD/MM/YYYY HH:MM
+    bool discount; // isApplied
+    string reasonForDiscount; // "miles", "flights", "seasonal"
+    string dateTime; // DD/MM/YYYY HH:MM
     int seatNumber;
 
 public:
-    // Constructors
     Ticket();
     Ticket(int custId, string custName, int fNum, int tNum, string tType, 
            int cost, bool disc, string reason, string dt, int seat);
 
-    // Getters
     int getCustomerId() const;
     string getCustomerName() const;
     int getFlightNum() const;
@@ -36,7 +34,6 @@ public:
     string getDateTime() const;
     int getSeatNumber() const;
 
-    // Setters
     void setCustomerId(int custId);
     void setCustomerName(string custName);
     void setFlightNum(int fNum);
@@ -48,9 +45,8 @@ public:
     void setDateTime(string dt);
     void setSeatNumber(int seat);
 
-    // Display
     void print() const;
-    string toFileFormat() const; // For saving to tickets.txt
+    string toFileFormat() const; 
 };
 
 #endif

@@ -5,11 +5,32 @@
 #include <format>
 #include <windows.h>
 
+void drawSplashScreen();
+bool initializeSystem(SystemManager&);
+void printSuccessMessage(const std::string&);
+void drawCloseScreen();
+
 int main() {
-    SetConsoleOutputCP(CP_UTF8);  // Tell Windows CMD to interpret output as UTF-8
-    // ═══════════════════════════════════════════════════════════
-    //  SPLASH SCREEN
-    // ═══════════════════════════════════════════════════════════
+
+    drawSplashScreen();
+    
+    SystemManager system;
+    
+    if (!initializeSystem(system)) { return 1; }
+    
+    printSuccessMessage("System initialized successfully!\n");
+    
+    Menu menu(system);
+    menu.run();
+    
+    drawCloseScreen();
+    
+    return 0;
+}
+
+void drawSplashScreen() {
+    SetConsoleOutputCP(CP_UTF8);  // for UTF-8 support on cmd
+    
     UIRenderer::clearScreen();
     UIRenderer::sleep(200);
     
@@ -34,12 +55,9 @@ int main() {
     
     std::cout << "\n\n";
     UIRenderer::sleep(300);
-    
-    // ═══════════════════════════════════════════════════════════
-    //  SYSTEM INITIALIZATION
-    // ═══════════════════════════════════════════════════════════
-    SystemManager system;
-    
+}
+
+bool initializeSystem(SystemManager& system) {
     UIRenderer::infoMessage("Initializing Flight Reservation System...\n");
     UIRenderer::showSpinner("Loading database", 1200);
     
@@ -48,23 +66,19 @@ int main() {
         UIRenderer::errorMessage("Failed to initialize system.");
         UIRenderer::errorMessage("Please check database connection and try again.");
         UIRenderer::sleep(2000);
-        return 1;
+        return false;
     }
-    
+    return true;
+}
+
+void printSuccessMessage(const std::string& message) {
     std::cout << "\n    ";
-    UIRenderer::successMessage("System initialized successfully!");
+    UIRenderer::successMessage(message);
     UIRenderer::progressBar(100, 40);
     UIRenderer::sleep(500);
-    
-    // ═══════════════════════════════════════════════════════════
-    //  RUN MAIN MENU
-    // ═══════════════════════════════════════════════════════════
-    Menu menu(system);
-    menu.run();
-    
-    // ═══════════════════════════════════════════════════════════
-    //  CLEANUP & EXIT
-    // ═══════════════════════════════════════════════════════════
+}
+
+void drawCloseScreen() {
     UIRenderer::clearScreen();
     std::cout << "\n\n";
     UIRenderer::printCentered(std::format("{}{}  System shutdown complete.{}", 
@@ -72,6 +86,4 @@ int main() {
     UIRenderer::printCentered(std::format("{}Have a safe flight! ✈{}", 
                               Theme::PRIMARY, Theme::RESET), 80);
     std::cout << "\n\n";
-    
-    return 0;
 }

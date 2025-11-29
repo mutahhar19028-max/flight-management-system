@@ -6,7 +6,6 @@ using std::cout;
 using std::endl;
 using std::string;
 
-// Constructors
 Flight::Flight() : flightNumber(0), planeId(0), day(0), month(0), year(0), 
                    departureTime("00:00"), destination("") {}
 
@@ -14,7 +13,6 @@ Flight::Flight(int flightNum, int plnId, int d, int m, int y, string time, strin
     : flightNumber(flightNum), planeId(plnId), day(d), month(m), year(y),
       departureTime(time), destination(dest) {}
 
-// Getters
 int Flight::getFlightNumber() const { return flightNumber; }
 int Flight::getPlaneId() const { return planeId; }
 int Flight::getDay() const { return day; }
@@ -35,7 +33,6 @@ int Flight::getSeatsReservedForClass(string className) const {
     return (it != seatsReserved.end()) ? it->second : 0;
 }
 
-// Setters
 void Flight::setFlightNumber(int flightNum) { flightNumber = flightNum; }
 void Flight::setPlaneId(int plnId) { planeId = plnId; }
 void Flight::setDay(int d) { day = d; }
@@ -69,7 +66,6 @@ int Flight::getAvailableSeats(string className, int totalSeatsInClass) const {
     return totalSeatsInClass - reserved;
 }
 
-// Display
 string Flight::getDateString() const {
     return std::to_string(day) + "/" + std::to_string(month) + "/" + std::to_string(year);
 }

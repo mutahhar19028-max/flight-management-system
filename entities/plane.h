@@ -12,15 +12,13 @@ private:
     int planeId;
     string description;
     int numberOfMilesTraveled;
-    std::map<string, int> numberOfSeatsPerClass; // e.g., {"Economy": 80, "Business": 20}
-    std::map<string, int> classPricing; // e.g., {"Economy": 400, "Business": 1000}
+    std::map<string, int> numberOfSeatsPerClass; // {"Economy": 80, "Business": 20}
+    std::map<string, int> classPricing; // {"Economy": 400, "Business": 1000}
 
 public:
-    // Constructors
     Plane();
     Plane(int id, string desc, int miles);
 
-    // Getters
     int getPlaneId() const;
     string getDescription() const;
     int getNumberOfMilesTraveled() const;
@@ -30,7 +28,6 @@ public:
     int getPriceForClass(string className) const;
     int getTotalSeats() const;
 
-    // Setters
     void setPlaneId(int id);
     void setDescription(string desc);
     void setNumberOfMilesTraveled(int miles);
@@ -39,10 +36,8 @@ public:
     void addSeatClass(string className, int numSeats);
     void addClassPrice(string className, int price);
 
-    // Update functions
     void updateNumberOfMilesTraveled(int miles);
 
-    // Display
     void display() const;
 };
 

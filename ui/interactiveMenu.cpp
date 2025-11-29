@@ -87,10 +87,6 @@ void InteractiveMenu::_drawMenuItem(const MenuItem& item, bool highlighted) {
     std::cout << "  " << _borderColor << "║" << Theme::RESET << "\n";
 }
 
-// ═══════════════════════════════════════════════════════════
-//  KEYBOARD INPUT - CROSS PLATFORM
-// ═══════════════════════════════════════════════════════════
-
 int InteractiveMenu::_getKey() {
 #ifdef _WIN32
 int ch = _getch();
